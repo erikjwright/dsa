@@ -1,6 +1,6 @@
 const std = @import("std");
 
-pub fn binarySearchRecursive(arr: []const i32, target: i32, low: usize, high: usize) i32 {
+pub fn binarySearchRecursive(arr: []const i32, target: i32, low: usize, high: usize) ?usize {
     if (low > high) {
         return null;
     }
