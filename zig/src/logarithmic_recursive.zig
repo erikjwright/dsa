@@ -11,7 +11,7 @@ pub fn binarySearchRecursive(arr: []const i32, target: i32, low: usize, high: us
         return mid;
     } else if (arr[mid] < target) {
         return binarySearchRecursive(arr, target, mid + 1, high);
-    } else if (arr[mid] > target) {
+    } else {
         return binarySearchRecursive(arr, target, low, mid - 1);
     }
 }
